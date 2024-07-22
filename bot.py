@@ -10,7 +10,7 @@ async def send_hi(sms:types.Message):
     logo = open(file='tg_bots/lesson_3/images/images.jfif',mode='rb')
     await sms.answer_photo(
         photo=logo,
-        caption=f'''Assalamu aleykum {sms.from_user.first_name}.
+        caption=f'''Kalay aman sauw {sms.from_user.first_name}.
 Botimizga xosh keldiniz.
 Menudi koriw ushin menu tuymesin basin
 ''',reply_markup=main_menu)
